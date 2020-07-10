@@ -1,209 +1,103 @@
-import Head from 'next/head'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <Header />
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <section id="banner">
+        <div className="inner">
+          <h1>Garantia de satisfação! <span>Oferecemos o melhor<br />
+					serviço para seu veículo premium</span></h1>
+          <ul className="actions">
+            <li><a href="#" className="button alt">Saiba mais</a></li>
+          </ul>
         </div>
-      </main>
+      </section>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <section id="one">
+        <div className="inner">
+          <header>
+            <h2>Bem-vindo à Auto Code</h2>
+          </header>
+          <p> A Auto Code é uma empresa de referência em serviços de mecânica de automóveis nacionais e importados. Procurando sempre atender da melhor maneira seus clientes e, para isso, investe nas mais avançadas tecnologias juntamente com profissionais responsáveis, treinados e altamente qualificados.</p>
+          <ul className="actions">
+            <li><a href="#" className="button alt">Leia Mais</a></li>
+          </ul>
+        </div>
+      </section>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      <section id="two">
+        <div className="inner">
+          <article>
+            <div className="content">
+              <header>
+                <h3>Performance</h3>
+              </header>
+              <div className="image fit">
+                <img src="images/pic01.jpg" alt="" />
+              </div>
+              <p>Reprogramação de ECU de forma a obter maior performance, menores emissões poluentes e redução de consumo.</p>
+            </div>
+          </article>
+          <article className="alt">
+            <div className="content">
+              <header>
+                <h3>Diagnóstico</h3>
+              </header>
+              <div className="image fit">
+                <img src="images/pic02.jpg" alt="" />
+              </div>
+              <p>Dagnostico do sistema de injeção eletrônica, verificação de componentes elétricos e ruídos internos do motor.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      <section id="three">
+        <div className="inner">
+          <article>
+            <div className="content">
+              <span className="icon fa-map-marker"></span>
+              <header>
+                <h3>Excelente Localização</h3>
+              </header>
+              <p>Localizados na zona sul de São Paulo, próximos a ponte do Morumbi, região de fácil acesso para a sua comodidade e tranquilidade na hora de levar o seu carro para a manutenção, revisão, ou preparação.</p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Leia Mais</a></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div className="content">
+              <span className="icon fa-star"></span>
+              <header>
+                <h3>Profissionais treinados e qualificados</h3>
+              </header>
+              <p>Com os nossos profissionais capacitados atendemos as diferentes demandas de todos os modelos esportivos e superesportivos dos clássicos aos modernos com a mesma qualidade.</p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Leia Mais</a></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div className="content">
+              <span className="icon fa-money"></span>
+              <header>
+                <h3>Preço justo e que cabe no seu bolso</h3>
+              </header>
+              <p>Atuamos com total transparência nos serviços e nos respectivos custos apresentados.
+              Aqui você traz as suas peças importadas ou importamos para você para viabilizarmos
+                 a sua revisão, manutenção ou preparação com o que há de melhor em peças sempre.</p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Leia Mais</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <Footer />
+    </>
   )
 }

@@ -1,0 +1,213 @@
+
+	#banner_about {
+		background-color: #e5474b;
+		color: #f2a3a5;
+		padding: 13em 0 11em 0;
+		background-color: #0c0c0c;
+		background-image: url("../public/assets/images/banner_about.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 15% left;
+		text-align: left;
+		position: relative;
+		z-index: 9999;
+	}
+
+		#banner_about input, #banner_about select, #banner_about textarea {
+			color: #ffffff;
+		}
+
+		#banner_about a {
+			color: #ffffff;
+		}
+
+		#banner_about strong, #banner_about b {
+			color: #ffffff;
+		}
+
+		#banner_about h1, #banner_about h2, #banner_about h3, #banner_about h4, #banner_about h5, #banner_about h6 {
+			color: #fff;
+		}
+
+		#banner_about blockquote {
+			border-left-color: #fff;
+		}
+
+		#banner_about code {
+			background: none;
+			border-color: #fff;
+		}
+
+		#banner_about hr {
+			border-bottom-color: #fff;
+		}
+
+		#banner_about input[type="submit"],
+		#banner_about input[type="reset"],
+		#banner_about input[type="button"],
+		#banner_about button,
+		#banner_about .button {
+			background-color: #5a5a5a;
+			color: #ffffff !important;
+		}
+
+			#banner_about input[type="submit"]:hover,
+			#banner_about input[type="reset"]:hover,
+			#banner_about input[type="button"]:hover,
+			#banner_about button:hover,
+			#banner_about .button:hover {
+				background-color: #676767;
+			}
+
+			#banner_about input[type="submit"]:active,
+			#banner_about input[type="reset"]:active,
+			#banner_about input[type="button"]:active,
+			#banner_about button:active,
+			#banner_about .button:active {
+				background-color: #4d4d4d;
+			}
+
+			#banner_about input[type="submit"].alt,
+			#banner_about input[type="reset"].alt,
+			#banner_about input[type="button"].alt,
+			#banner_about button.alt,
+			#banner_about .button.alt {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #fff;
+				color: #ffffff !important;
+			}
+
+				#banner_about input[type="submit"].alt:hover,
+				#banner_about input[type="reset"].alt:hover,
+				#banner_about input[type="button"].alt:hover,
+				#banner_about button.alt:hover,
+				#banner_about .button.alt:hover {
+					background: rgba(255, 255, 255, 0.25);
+				}
+
+				#banner_about input[type="submit"].alt:active,
+				#banner_about input[type="reset"].alt:active,
+				#banner_about input[type="button"].alt:active,
+				#banner_about button.alt:active,
+				#banner_about .button.alt:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+				#banner_about input[type="submit"].alt.icon:before,
+				#banner_about input[type="reset"].alt.icon:before,
+				#banner_about input[type="button"].alt.icon:before,
+				#banner_about button.alt.icon:before,
+				#banner_about .button.alt.icon:before {
+					color: #f8d1d2;
+				}
+
+			#banner_about input[type="submit"].special,
+			#banner_about input[type="reset"].special,
+			#banner_about input[type="button"].special,
+			#banner_about button.special,
+			#banner_about .button.special {
+				background-color: #ffffff;
+				color: #e5474b !important;
+			}
+
+		#banner_about:after {
+			-moz-transition: opacity 4s ease;
+			-webkit-transition: opacity 4s ease;
+			-ms-transition: opacity 4s ease;
+			transition: opacity 4s ease;
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: block;
+			top: 0;
+			left: 0;
+			background-color: #0c0c0c;
+			opacity: 0.25;
+		}
+
+		#banner_about .inner {
+			max-width: 65em;
+			width: calc(100% - 6em);
+			margin: 0 auto;
+			position: relative;
+			z-index: 10000;
+			line-height: 1.5;
+		}
+
+			@media screen and (max-width: 480px) {
+
+				#banner_about .inner {
+					max-width: 90%;
+					width: 90%;
+				}
+
+			}
+
+		#banner_about h1 {
+			font-size: 2em;
+			margin: 0 0 1em 0;
+			padding: 0;
+			letter-spacing: 3px;
+			font-weight: 700;
+		}
+
+			#banner_about h1 span {
+				font-weight: 400;
+			}
+
+		body.is-loading #banner_about:after {
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			#banner_about {
+				padding: 10em 0 8em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner_about {
+				padding: 8em 0 6em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner_about {
+				padding: 12em 0 10em 0;
+			}
+
+				#banner_about br {
+					display: none;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner_about {
+				padding: 4em 0 2em 0;
+			}
+
+				#banner_about h1 {
+					font-size: 1.75em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner_about {
+				padding: 5em 0 3em 0;
+			}
+
+				#banner_about ul {
+					margin-top: 1em;
+				}
+
+		}
